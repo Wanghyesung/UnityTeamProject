@@ -66,7 +66,6 @@ public abstract class SkillData : SOData, IStat
     }
     public virtual T GetSkillLevelDataValue<T>(int level,T start, Func<SkillLevelData,T> d)
     {
-        //Debug.Log($"Level {level}");
         var l = GetSkillLevelData(level);
         if(l == null) return start;
         return d(l);

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Way8SkillObj : ProjectTileSkillObj
+public class Way8SkillObj : SkillObject
 {
     public override void Init(Skill skill)
     {

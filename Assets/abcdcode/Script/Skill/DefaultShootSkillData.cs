@@ -21,7 +21,6 @@ public class DefaultShootSkillData : SkillData
     }
     public virtual void Shoot(Skill skill)
     {
-        //var ptsd = Instantiate(Prefab).GetComponent<ProjectTileSkillObj>();
         if(skill.Owner is MonoBehaviour m)
         {
            m.StartCoroutine(ShootCoroutine(skill));
